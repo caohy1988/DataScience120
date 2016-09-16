@@ -16,6 +16,7 @@ class Solution(object):
                     value_matrix[index_1][index_2] = value_matrix[index_1-1][index_2]
                 else:
                     value_matrix[index_1][index_2] = max(value_matrix[index_1-1][index_2], value_matrix[index_1-1][index_2-weight[index_1]] + value[index_1])
+        # Backtrack
         index = 0
         max_value = value_matrix[length_list-1][weight_limit]
         weight_left = weight_limit
