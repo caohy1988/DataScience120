@@ -20,6 +20,4 @@ class Solution:
                     ans = mid
                 else:
                     end = mid - 1
-
-
             return ans

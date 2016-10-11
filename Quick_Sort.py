@@ -14,6 +14,7 @@ def quickSortHelper(alist,first,last):
 
 
 def partition(alist,first,last):
+   # middle = int(round((first + last)/2,0))
    pivotvalue = alist[first]
 
    leftmark = first+1
